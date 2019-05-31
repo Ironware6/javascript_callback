@@ -85,7 +85,7 @@ let mySome = function(arrayN, callback){
 console.log(mySome(array, even));
 
 
-//-----------SOME--------------
+//-----------EVERY--------------
 
 var arrayFive = [1, 1, 18, 1, 2, ];
 
