@@ -109,3 +109,24 @@ let myEvery = function(arrayZ, callback){
 //test 
 console.log(myEvery(arrayFive, lessThanFive));
 
+//-----------REDUCE--------------
+
+var arrayFive = [5, 5, 10, 5, 5, ];
+
+//sum function for the array
+let sum = function(arrayJ) {
+  total = 0;
+  for(var i = 0; i < arrayJ.length; i++) {
+      total += arrayJ[i];
+      
+  }
+ return total;
+
+
+};
+// apply a callback function to the array in the parameter.
+let myReduce = function(arrayL,currentValue, callback){
+  return callback(arrayL) + currentValue;
+}
+//test 
+console.log(myReduce(arrayFive, 5, sum));
